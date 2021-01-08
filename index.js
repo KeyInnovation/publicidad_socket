@@ -1,5 +1,5 @@
 const io = require("socket.io");
-const server = io.listen(4568);
+const server = io.listen(process.env.PORT);
 
 server.on("connection", function(socket) {
 
